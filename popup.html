@@ -10,8 +10,8 @@
       --border: #22304a;
       --text: #e6edf6;
       --muted: #8b9bb4;
-      --accent: #22d3ee;
-      --accent-2: #0ea5e9;
+      --accent: #ff6a3d;
+      --accent-2: #e5372a;
       --hd: #34d399;
     }
     * { box-sizing: border-box; }
@@ -35,13 +35,10 @@
       border-bottom: 1px solid var(--border);
     }
     .logo {
-      width: 34px; height: 34px; flex: none;
-      border-radius: 10px;
+      width: 36px; height: 36px; flex: none;
       display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 4px 14px rgba(14,165,233,0.35);
     }
-    .logo svg { width: 20px; height: 20px; display: block; }
+    .logo img { width: 36px; height: 36px; display: block; }
     .brand h1 { font-size: 16px; margin: 0; letter-spacing: -0.2px; font-weight: 700; }
     .brand .tag { font-size: 11px; color: var(--muted); margin-top: 1px; }
     .body { padding: 14px 16px 16px; }
@@ -89,7 +86,7 @@
     button:hover { filter: brightness(1.08); }
     button:active { transform: scale(0.98); }
     button svg { width: 16px; height: 16px; }
-    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 4px 14px rgba(14,165,233,0.3); }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 4px 14px rgba(229,55,42,0.32); }
     .btn-ghost { background: var(--surface); border: 1px solid var(--border); margin-top: 8px; }
     #status { font-size: 12px; margin-top: 12px; color: var(--accent); min-height: 15px; text-align: center; }
   </style>
@@ -97,13 +94,10 @@
 <body>
   <div class="brand">
     <div class="logo">
-      <!-- dolphin-ish arrow: download mark -->
-      <svg viewBox="0 0 24 24" fill="none" stroke="#0b1220" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/>
-      </svg>
+      <img src="icons/icon128.png" alt="CrabGrab">
     </div>
     <div>
-      <h1>Delpix</h1>
+      <h1>CrabGrab</h1>
       <div class="tag">Imágenes en máxima resolución</div>
     </div>
   </div>

@@ -1,8 +1,8 @@
-# Política de Privacidad — Delpix
+# Política de Privacidad — CrabGrab
 
 _Última actualización: 19 de julio de 2026_
 
-Delpix no recopila, almacena ni transmite ningún dato personal ni
+CrabGrab no recopila, almacena ni transmite ningún dato personal ni
 información de navegación. Todo ocurre en tu dispositivo.
 
 ## Qué datos se guardan

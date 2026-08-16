@@ -20,7 +20,7 @@
 }
 
 .mid-dl-btn:hover {
-  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  background: linear-gradient(135deg, #ff6a3d, #e5372a);
   transform: scale(1.08);
 }
 
@@ -29,7 +29,7 @@
 }
 
 .mid-dl-btn.mid-busy {
-  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  background: linear-gradient(135deg, #ff6a3d, #e5372a);
   cursor: progress;
 }
 

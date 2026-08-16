@@ -1,4 +1,4 @@
-# Delpix
+# CrabGrab
 
 **Descarga cualquier imagen de la web en su máxima resolución con un solo clic.**
 
@@ -6,8 +6,8 @@ Extensión de Chrome (Manifest V3, JavaScript puro, sin frameworks). Encuentra l
 versión de mayor resolución de cada imagen y la guarda, atravesando las capas que
 algunos sitios ponen encima para bloquear el guardado.
 
-🌐 **Sitio web:** https://odrac94.github.io/delpix/
-🔒 **Privacidad:** https://odrac94.github.io/delpix/privacy.html
+🌐 **Sitio web:** https://odrac94.github.io/crabgrab/
+🔒 **Privacidad:** https://odrac94.github.io/crabgrab/privacy.html
 
 ## Características
 

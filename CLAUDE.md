@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Delpix — a Chrome Manifest V3 extension (vanilla JS, no framework) that downloads any web image at its
+CrabGrab — a Chrome Manifest V3 extension (vanilla JS, no framework) that downloads any web image at its
 maximum available resolution. Published/prepared for the Chrome Web Store in Spanish.
 
 ## Commands
@@ -15,7 +15,7 @@ No build system, no package.json, no test runner. Files ship as-is.
 # Syntax-check after editing any JS (the only automated check available)
 node --check content.js ; node --check background.js ; node --check popup.js ; node --check gallery.js
 
-# Build the Web Store ZIP (reads version from manifest.json -> delpix-v<version>.zip)
+# Build the Web Store ZIP (reads version from manifest.json -> crabgrab-v<version>.zip)
 pwsh ./package-extension.ps1
 ```
 
@@ -113,8 +113,8 @@ same change; when bumping `version`, add a **Version History** row. `<all_urls>`
 review, so the justifications matter.
 
 `PRIVACY.md` and its hosted twin `docs/privacy.html` must stay in sync — they currently disagree on the
-product name (`PRIVACY.md` still says "Max Image Downloader", the HTML says "Delpix"). The Privacy Policy
+product name (`PRIVACY.md` still says "Max Image Downloader", the HTML says "CrabGrab"). The Privacy Policy
 URL in `CHROMEWEBSTORE.md` is still a `<PENDIENTE>` placeholder.
 
-The git repo has **no commits yet** — `delpix-v1.0.0.zip` and `docs/` are build/publish artifacts sitting in
+The git repo has **no commits yet** — `crabgrab-v1.0.0.zip` and `docs/` are build/publish artifacts sitting in
 the working tree.

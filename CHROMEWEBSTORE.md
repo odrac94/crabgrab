@@ -1,18 +1,18 @@
-# Chrome Web Store Listing — Delpix
+# Chrome Web Store Listing — CrabGrab
 
 > Last Updated: 2026-07-19
 
 ## Store Listing
 
 **Extension Name**
-Delpix — Descargar imágenes en máxima resolución
+CrabGrab — Descargar imágenes en máxima resolución
 
 **Short Description** (≤132 chars)
 Descarga cualquier imagen en su máxima resolución con un solo clic, en cualquier sitio web.
 
 **Detailed Description**
 
-Delpix descarga cualquier imagen que veas en la web en su máxima resolución disponible, con un solo clic.
+CrabGrab descarga cualquier imagen que veas en la web en su máxima resolución disponible, con un solo clic.
 
 Características:
 Pasa el cursor sobre cualquier imagen y aparece un botón de descarga ⬇. También puedes hacer clic derecho sobre una imagen y elegir "Descargar imagen".
@@ -94,7 +94,7 @@ Las direcciones de imágenes por pestaña se guardan en `chrome.storage.session`
 ## Privacy Policy
 
 **Privacy Policy URL** [REQUIRED]
-`https://odrac94.github.io/delpix/privacy.html`
+`https://odrac94.github.io/crabgrab/privacy.html`
 
 ## Distribution
 
@@ -106,7 +106,7 @@ Las direcciones de imágenes por pestaña se guardan en `chrome.storage.session`
 **Publisher Name**: Delfín
 **Contact Email**: richardo.delfin94@gmail.com
 **Support URL / Email**: richardo.delfin94@gmail.com
-**Homepage URL**: `https://odrac94.github.io/delpix/`
+**Homepage URL**: `https://odrac94.github.io/crabgrab/`
 
 ## Version History
 

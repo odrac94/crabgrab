@@ -1,10 +1,10 @@
-// Max Image Downloader - service worker
+// CrabGrab - service worker
 
 // Context menu on any image.
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "mid-download",
-    title: "Descargar imagen en máxima resolución (Delpix)",
+    title: "Descargar imagen en máxima resolución (CrabGrab)",
     contexts: ["image"]
   });
 });

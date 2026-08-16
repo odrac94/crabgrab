@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Delpix — Descarga imágenes en máxima resolución</title>
-  <meta name="description" content="Delpix descarga cualquier imagen de la web en su máxima resolución con un solo clic. Extensión gratuita para Chrome.">
+  <title>CrabGrab — Descarga imágenes en máxima resolución</title>
+  <meta name="description" content="CrabGrab descarga cualquier imagen de la web en su máxima resolución con un solo clic. Extensión gratuita para Chrome.">
   <style>
     :root {
       --bg: #0b1220; --bg-2: #0e1626; --surface: #121a2b; --surface-2: #18233a;
       --border: #22304a; --text: #e6edf6; --muted: #8b9bb4;
-      --accent: #22d3ee; --accent-2: #0ea5e9; --hd: #34d399;
+      --accent: #ff6a3d; --accent-2: #e5372a; --hd: #34d399;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -24,34 +24,31 @@
     /* Nav */
     nav {
       display: flex; align-items: center; justify-content: space-between;
-      padding: 18px 24px; max-width: 1000px; margin: 0 auto;
+      padding: 16px 24px; max-width: 1000px; margin: 0 auto;
     }
-    .brand { display: flex; align-items: center; gap: 11px; }
-    .logo {
-      width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 4px 16px rgba(14,165,233,0.4);
-    }
-    .logo svg { width: 22px; height: 22px; }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand img { width: 38px; height: 38px; display: block; }
     .brand b { font-size: 19px; letter-spacing: -0.4px; }
+    .brand b .g { color: var(--accent); }
     nav .links { display: flex; gap: 22px; align-items: center; font-size: 14px; }
     nav .links a { color: var(--muted); }
     nav .links a:hover { color: var(--text); }
 
     /* Hero */
     .hero {
-      text-align: center; padding: 70px 24px 60px;
+      text-align: center; padding: 54px 24px 60px;
       background:
-        radial-gradient(60% 90% at 50% 0%, rgba(34,211,238,0.13), transparent 70%),
+        radial-gradient(60% 90% at 50% 0%, rgba(255,106,61,0.14), transparent 70%),
         var(--bg);
     }
+    .hero .heroimg { width: 210px; max-width: 62%; height: auto; margin: 0 auto 20px; display: block; filter: drop-shadow(0 12px 30px rgba(229,55,42,0.28)); }
     .hero .pill {
       display: inline-block; font-size: 12.5px; color: var(--accent);
-      background: rgba(34,211,238,0.1); border: 1px solid rgba(34,211,238,0.25);
+      background: rgba(255,106,61,0.1); border: 1px solid rgba(255,106,61,0.28);
       padding: 5px 13px; border-radius: 999px; margin-bottom: 22px;
     }
     .hero h1 {
-      font-size: 48px; line-height: 1.1; margin: 0 auto 18px; max-width: 760px;
+      font-size: 48px; line-height: 1.1; margin: 0 auto 18px; max-width: 780px;
       letter-spacing: -1.4px; font-weight: 800;
     }
     .hero h1 .grad {
@@ -64,8 +61,8 @@
     .cta {
       display: inline-flex; align-items: center; gap: 9px;
       padding: 14px 26px; border-radius: 12px; font-weight: 700; font-size: 15px;
-      color: #06121f; background: linear-gradient(135deg, var(--accent), var(--accent-2));
-      box-shadow: 0 8px 26px rgba(14,165,233,0.4); transition: transform 0.08s, filter 0.14s;
+      color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 8px 26px rgba(229,55,42,0.42); transition: transform 0.08s, filter 0.14s;
     }
     .cta:hover { filter: brightness(1.07); transform: translateY(-1px); }
     .cta svg { width: 18px; height: 18px; }
@@ -87,11 +84,12 @@
     }
     .card .ic {
       width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
-      background: rgba(34,211,238,0.12); margin-bottom: 16px;
+      background: rgba(255,106,61,0.13); margin-bottom: 16px;
     }
     .card .ic svg { width: 23px; height: 23px; stroke: var(--accent); }
     .card h3 { margin: 0 0 7px; font-size: 16.5px; }
     .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .card code { background: var(--surface-2); padding: 1px 5px; border-radius: 5px; font-size: 12.5px; color: var(--text); }
 
     /* Steps */
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; counter-reset: s; }
@@ -99,7 +97,7 @@
     .step::before {
       counter-increment: s; content: counter(s);
       display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px;
-      font-weight: 800; font-size: 15px; color: #06121f;
+      font-weight: 800; font-size: 15px; color: #fff;
       background: linear-gradient(135deg, var(--accent), var(--accent-2)); margin-bottom: 14px;
     }
     .step h3 { margin: 0 0 6px; font-size: 15.5px; }
@@ -134,10 +132,8 @@
 <body>
   <nav>
     <div class="brand">
-      <div class="logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#06121f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
-      </div>
-      <b>Delpix</b>
+      <img src="crab.png" alt="CrabGrab">
+      <b>Crab<span class="g">Grab</span></b>
     </div>
     <div class="links">
       <a href="#features">Características</a>
@@ -147,9 +143,10 @@
   </nav>
 
   <header class="hero">
+    <img class="heroimg" src="crab.png" alt="CrabGrab">
     <span class="pill">Extensión gratuita para Chrome</span>
-    <h1>Descarga cualquier imagen en su <span class="grad">máxima resolución</span></h1>
-    <p class="sub">Delpix encuentra la versión más grande de cada imagen que ves en la web y la guarda con un solo clic. Sin miniaturas, sin recortes.</p>
+    <h1>Agarra cualquier imagen en su <span class="grad">máxima resolución</span></h1>
+    <p class="sub">CrabGrab encuentra la versión más grande de cada imagen que ves en la web y la guarda con un solo clic. Sin miniaturas, sin recortes.</p>
     <a class="cta" href="#" id="cws">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
       Añadir a Chrome
@@ -160,7 +157,7 @@
 
   <section id="features">
     <div class="wrap">
-      <h2 class="sec-title">Todo lo que necesitas para guardar imágenes</h2>
+      <h2 class="sec-title">Todo lo que necesitas para agarrar imágenes</h2>
       <p class="sec-sub">Diseñada para funcionar en cualquier sitio de internet.</p>
       <div class="grid">
         <div class="card">
@@ -200,10 +197,10 @@
   <section id="how">
     <div class="wrap">
       <h2 class="sec-title">Tres pasos, cero configuración</h2>
-      <p class="sec-sub">Instala y empieza a descargar.</p>
+      <p class="sec-sub">Instala y empieza a agarrar.</p>
       <div class="steps">
         <div class="step">
-          <h3>Instala Delpix</h3>
+          <h3>Instala CrabGrab</h3>
           <p>Añádela desde la Chrome Web Store. Queda un icono en tu barra.</p>
         </div>
         <div class="step">
@@ -212,7 +209,7 @@
         </div>
         <div class="step">
           <h3>Recibe el archivo grande</h3>
-          <p>Delpix busca y guarda la versión de máxima resolución en tu carpeta de descargas.</p>
+          <p>CrabGrab busca y guarda la versión de máxima resolución en tu carpeta de descargas.</p>
         </div>
       </div>
     </div>
@@ -222,24 +219,22 @@
     <div class="wrap">
       <div class="ic">🔒</div>
       <h2>Tu privacidad, <span class="badge-hd">intacta</span></h2>
-      <p>Delpix no recopila, almacena ni envía ningún dato personal ni de navegación. Todo ocurre en tu dispositivo. Sin cookies, sin analítica, sin terceros.</p>
+      <p>CrabGrab no recopila, almacena ni envía ningún dato personal ni de navegación. Todo ocurre en tu dispositivo. Sin cookies, sin analítica, sin terceros.</p>
       <a class="cta secondary" href="privacy.html" style="margin-left:0;">Leer la política de privacidad</a>
     </div>
   </section>
 
   <footer>
     <div class="brand">
-      <div class="logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#06121f" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M5 21h14"/></svg>
-      </div>
-      <b>Delpix</b>
+      <img src="crab.png" alt="CrabGrab">
+      <b>Crab<span class="g">Grab</span></b>
     </div>
     <div class="fl">
       <a href="privacy.html">Privacidad</a>
       <a href="mailto:richardo.delfin94@gmail.com">Contacto</a>
-      <a href="https://github.com/odrac94/delpix">GitHub</a>
+      <a href="https://github.com/odrac94/crabgrab">GitHub</a>
     </div>
-    <div>© 2026 Delpix · Descarga imágenes en máxima resolución</div>
+    <div>© 2026 CrabGrab · Descarga imágenes en máxima resolución</div>
   </footer>
 </body>
 </html>
