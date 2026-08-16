@@ -1,0 +1,57 @@
+.mid-dl-btn {
+  position: fixed;
+  z-index: 2147483647;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(20, 20, 22, 0.82);
+  color: #fff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+  transition: background 0.15s ease, transform 0.1s ease;
+  font-family: system-ui, sans-serif;
+}
+
+.mid-dl-btn:hover {
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  transform: scale(1.08);
+}
+
+.mid-dl-btn:active {
+  transform: scale(0.94);
+}
+
+.mid-dl-btn.mid-busy {
+  background: linear-gradient(135deg, #22d3ee, #0ea5e9);
+  cursor: progress;
+}
+
+.mid-toast {
+  position: fixed;
+  z-index: 2147483647;
+  right: 16px;
+  bottom: 16px;
+  max-width: 300px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: rgba(20, 20, 22, 0.92);
+  color: #fff;
+  font: 13px/1.4 system-ui, sans-serif;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+  pointer-events: none;
+}
+
+.mid-toast.mid-show {
+  opacity: 1;
+  transform: translateY(0);
+}

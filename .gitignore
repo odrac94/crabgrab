@@ -1,0 +1,9 @@
+# Build artifacts
+*.zip
+
+# Local tooling
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
