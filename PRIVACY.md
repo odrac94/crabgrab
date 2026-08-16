@@ -35,4 +35,4 @@ Si en el futuro cambian estas prácticas, actualizaremos esta página y la fecha
 
 ## Contacto
 
-Para cualquier duda sobre privacidad: richardo.delfin94@gmail.com
+Para cualquier duda sobre privacidad: ricardo.delfinvz@gmail.com

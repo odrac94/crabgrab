@@ -31,7 +31,7 @@ Privacidad:
 Esta extensión no recopila, almacena ni envía ningún dato personal ni de navegación. Todo ocurre en tu dispositivo. No usa cookies, analítica ni servicios de terceros. Tu preferencia de "Buscar tamaño completo" se guarda con la sincronización de Chrome únicamente para recordar tu ajuste entre dispositivos.
 
 Soporte:
-Escríbenos a richardo.delfin94@gmail.com.
+Escríbenos a ricardo.delfinvz@gmail.com.
 
 **Category**
 Photos
@@ -104,8 +104,8 @@ Las direcciones de imágenes por pestaña se guardan en `chrome.storage.session`
 ## Developer Info
 
 **Publisher Name**: Delfín
-**Contact Email**: richardo.delfin94@gmail.com
-**Support URL / Email**: richardo.delfin94@gmail.com
+**Contact Email**: ricardo.delfinvz@gmail.com
+**Support URL / Email**: ricardo.delfinvz@gmail.com
 **Homepage URL**: `https://odrac94.github.io/crabgrab/`
 
 ## Version History
