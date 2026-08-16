@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CrabGrab — Descarga imágenes en máxima resolución</title>
   <meta name="description" content="CrabGrab descarga cualquier imagen de la web en su máxima resolución con un solo clic. Extensión gratuita para Chrome.">
+  <!-- Language auto-detect: English browsers get the EN home; choice is remembered.
+       ?lang=es (manual switch) forces Spanish and stops the redirect. -->
+  <script>
+  (function () {
+    try {
+      var p = new URLSearchParams(location.search);
+      if (p.get("lang") === "es") { sessionStorage.setItem("cg_lang", "es"); return; }
+      var saved = sessionStorage.getItem("cg_lang");
+      if (saved === "es") return;
+      if (saved === "en") { location.replace("en/"); return; }
+      var l = (navigator.language || navigator.userLanguage || "").toLowerCase();
+      if (l.slice(0, 2) === "en") { sessionStorage.setItem("cg_lang", "en"); location.replace("en/"); }
+    } catch (e) {}
+  })();
+  </script>
   <style>
     :root {
       --bg: #0b1220; --bg-2: #0e1626; --surface: #121a2b; --surface-2: #18233a;
